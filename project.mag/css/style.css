@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'WDXL Lubrifont SC';
+  src: url('/project.mag/fonts/WDXLLubrifontSC-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card-tovar {
+  width: 220px;
+  height: 340px; /* Уменьшил базовую высоту */
+  border: solid 1px rgb(165, 165, 165);
+  border-radius: 11px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 7px;
+}
+
+.img-card1 {
+  width: 100%;
+  height: 140px; /* Уменьшил высоту изображения */
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.title-card1 {
+  font-size: 15px;
+  margin: 10px 0 4px 0;
+  line-height: 1.2;
+  
+}
+
+.discription-cart1 {
+  flex-grow: 1;
+  font-size: 12px;
+  margin: 4px 0;
+  overflow-y: auto;
+  min-height: 50px;
+  line-height: 1.3;
+}
+
+.discription-cart2 {
+  flex-grow: 1;
+  font-size: 12px;
+  margin: 4px 5px;
+  overflow-y: auto;
+  min-height: 8px;
+  /* line-height: 1.3; */
+}
+
+.price-card1 {
+  width: 100px;
+  border-radius: 10px 0px 10px 0px;
+  margin: 4px 0 8px 0;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #fff;
+  background-color: rgb(42, 44, 41);
+
+}
+
+.btn-container {
+  background-color: rgb(42, 44, 41);
+  padding: 6px 0;
+  margin: 0 8px 8px 8px;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+
+  .card-tovar {
+    width: 96%;
+    min-height: 290px; /* Чуть уменьшил общую высоту */
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-card1 {
+    height: 140px;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+  }
+
+  .content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px; /* Увеличил боковые отступы с 5px до 8px */
+  }
+
+  .title-card1 {
+    font-size: 14px;
+    margin: 10px 0 10px; /* Чуть увеличил вертикальные отступы */
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 2px; /* Добавил небольшие боковые отступы */
+  }
+
+  .discription-cart1 {
+    flex-grow: 1;
+    font-size: 11px; /* Уменьшил шрифт с 10px до 9px */
+    margin: 2px 0;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.6;
+    padding: 0 2px; /* Добавил небольшие боковые отступы */
+  }
+    .discription-cart2 {
+    max-height: 14px;
+    font-size: 10px; /* Уменьшил шрифт с 10px до 9px */
+    margin: 2px 4px;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .price-card1 {
+    width: 100px;
+    margin: 0px 3px;
+    font-size: 12px;
+    padding: 6px; /* Добавил небольшие боковые отступы */
+  }
+
+  .btn-container {
+    margin: 8px 10px 10px; /* Увеличил боковые отступы с 5px до 8px */
+    padding: 10px 0px;
+    font-size: 11px;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-tovar {
+    min-height: 270px; /* Соответственно уменьшил */
+  }
+}
