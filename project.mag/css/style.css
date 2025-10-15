@@ -90,7 +90,7 @@ a {
   font-size: 12px;
   font-weight: 800;
 }
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   body {
     padding: 4px;
     display: grid;
@@ -100,7 +100,7 @@ a {
 
   .card-tovar {
     width: 96%;
-    min-height: 290px; /* Чуть уменьшил общую высоту */
+    min-height: 290px;
     margin: 4px;
     display: flex;
     flex-direction: column;
@@ -117,33 +117,33 @@ a {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 0 8px; /* Увеличил боковые отступы с 5px до 8px */
+    padding: 0 8px;
   }
 
   .title-card1 {
     font-size: 14px;
-    margin: 10px 0 10px; /* Чуть увеличил вертикальные отступы */
+    margin: 10px 0 10px;
     line-height: 1.2;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 0 2px; /* Добавил небольшие боковые отступы */
+    padding: 0 2px;
   }
 
   .discription-cart1 {
     flex-grow: 1;
-    font-size: 11px; /* Уменьшил шрифт с 10px до 9px */
+    font-size: 11px;
     margin: 2px 0;
     -webkit-line-clamp: 2;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     line-height: 1.6;
-    padding: 0 2px; /* Добавил небольшие боковые отступы */
+    padding: 0 2px; 
   }
     .discription-cart2 {
     max-height: 14px;
-    font-size: 10px; /* Уменьшил шрифт с 10px до 9px */
+    font-size: 10px;
     margin: 2px 4px;
     -webkit-line-clamp: 2;
     display: -webkit-box;
@@ -155,12 +155,11 @@ a {
     width: 100px;
     margin: 0px 3px;
     font-size: 12px;
-    padding: 6px; /* Добавил небольшие боковые отступы */
+    padding: 6px;
   }
 
   .btn-container {
-    margin: 8px 10px 10px; /* Увеличил боковые отступы с 5px до 8px */
-    padding: 10px 0px;
+    margin: 8px 10px 10px;
     font-size: 11px;
     border-radius: 4px;
   }
@@ -168,6 +167,8 @@ a {
 
 @media (max-width: 400px) {
   .card-tovar {
-    min-height: 270px; /* Соответственно уменьшил */
+    min-height: 270px; 
   }
-}
+} */
+
+

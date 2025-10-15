@@ -1,0 +1,153 @@
+
+/* общие */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+
+}
+
+
+
+.header {
+    background-color: aqua;
+}
+
+.container {
+    background-color: bisque;
+    max-width: 480px;
+}
+
+.header__container {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+
+}
+
+.header__logo {
+
+}
+
+.header__logo-img {
+    width: 100%;
+}
+
+.header__menu {
+
+}
+
+.header__title {
+
+}
+
+.header__phone {
+
+}
+
+.header__phone-link {
+
+}
+
+.header__basket {
+
+}
+
+.header__basket-img {
+
+}
+
+.header__nav {
+
+}
+
+.heder__nav--btn {
+
+}
+
+.header__btn {
+
+}
+
+.main {
+
+}
+
+.tovar {
+
+}
+
+.card-tovar {
+
+}
+
+.img-card1 {
+
+}
+
+.content-wrapper {
+
+}
+
+.title-card1 {
+
+}
+
+.discription-cart1 {
+
+}
+
+.discription-cart2 {
+
+}
+
+.price-card1 {
+
+}
+
+.btn-container {
+
+}
+
+.btn-card1 {
+
+}
+
+.social-btn {
+
+}
+
+.telegram {
+
+}
+
+.whatsapp {
+
+}
+
+
+
+
+
+
+
+
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+.social-btn {
+    width: 50px;
+    height: 50px;
+    right: 10px;
+}
+
+.telegram {
+    bottom: 80px;
+}
+
+.whatsapp {
+    bottom: 20px;
+}
+}
