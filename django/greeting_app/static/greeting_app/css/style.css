@@ -1,0 +1,288 @@
+/**
+ * CSS стили для приложения greeting_app
+ * 
+ * Этот файл содержит стили для:
+ * - Оформления формы ввода имени
+ * - Стилизации кнопок
+ * - Отображения сообщений
+ * - Адаптивного дизайна
+ * - Современного и привлекательного интерфейса
+ */
+
+/* Сброс стандартных стилей браузера для единообразия */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Стили для всего тела страницы */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+}
+
+/* Основной контейнер приложения */
+.container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Анимация появления контейнера */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Стили для заголовка */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #667eea;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+/* Блок приветствия */
+.greeting-block {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.greeting-block h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.greeting-text {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* Стили для формы */
+.name-form {
+    margin-top: 30px;
+}
+
+/* Группа полей формы */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Стили для параграфов формы (Django form.as_p) */
+.form-group p {
+    margin-bottom: 15px;
+}
+
+/* Стили для меток полей */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 1.1em;
+}
+
+/* Стили для полей ввода */
+.form-input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+/* Эффект при фокусе на поле ввода */
+.form-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Стили для кнопки отправки */
+.submit-btn {
+    width: 100%;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Эффект при наведении на кнопку */
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Эффект при нажатии на кнопку */
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Эффект для неактивной кнопки */
+.submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Стили для блока ошибок формы */
+.form-errors {
+    background-color: #fee;
+    border: 2px solid #fcc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.error-list {
+    list-style: none;
+    color: #c33;
+}
+
+.error-list li {
+    padding: 5px 0;
+    font-weight: 500;
+}
+
+.error-list li:before {
+    content: "⚠ ";
+    margin-right: 5px;
+}
+
+/* Стили для сообщений Django */
+.messages {
+    margin-bottom: 20px;
+}
+
+.message {
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Стили для сообщения об успехе */
+.message-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 2px solid #c3e6cb;
+}
+
+/* Стили для сообщения об ошибке */
+.message-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 2px solid #f5c6cb;
+}
+
+/* Стили для информационного сообщения */
+.message-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 2px solid #bee5eb;
+}
+
+/* Стили для предупреждения */
+.message-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 2px solid #ffeaa7;
+}
+
+/* Стили для футера */
+.info-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #e0e0e0;
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Адаптивный дизайн для мобильных устройств */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .greeting-block h2 {
+        font-size: 1.5em;
+    }
+
+    .form-input,
+    .submit-btn {
+        font-size: 1em;
+    }
+}
+
